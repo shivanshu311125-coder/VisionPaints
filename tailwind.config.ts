@@ -65,9 +65,8 @@ export default {
         },
       },
       backgroundImage: {
-        "hero-gradient": "var(--gradient-hero)",
-        "card-gradient": "var(--gradient-card)",
-        "accent-gradient": "var(--gradient-accent)",
+    'hero-gradient': 'linear-gradient(to right, #14b8a6, #f59e0b)', // light
+    'hero-gradient-dark': 'linear-gradient(to right, #38bdf8, #fbbf24)', // dark
       },
       boxShadow: {
         soft: "var(--shadow-soft)",

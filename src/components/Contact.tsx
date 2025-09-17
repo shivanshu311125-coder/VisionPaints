@@ -89,69 +89,6 @@ const Contact = () => {
             </CardContent>
           </Card>
         </div>
-
-        <div className="max-w-2xl mx-auto">
-          <Card className="bg-card shadow-medium border-border">
-            <CardHeader>
-              <CardTitle className="text-2xl text-center">Send Us a Message</CardTitle>
-              <p className="text-muted-foreground text-center">
-                Let's bring your vision to life! Tell us about your project.
-              </p>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
-                    <Input
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      required
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email Address</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Tell us about your project</Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Describe your painting needs, space details, timeline, or any questions you have..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    required
-                    className="min-h-32"
-                  />
-                </div>
-
-                <Button type="submit" variant="hero" size="lg" className="w-full">
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );

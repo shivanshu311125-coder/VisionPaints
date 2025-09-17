@@ -65,10 +65,10 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="mt-16 bg-accent-gradient rounded-3xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">
+          <h3 className="text-2xl font-bold text-foreground mb-4">
             🌟 A Bond Beyond Painting
           </h3>
-          <p className="text-white/90 text-lg max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
             Our relationship doesn't end when the painting does. At VisionPaint, we stay with you 
             even after the job is done — building a forever partnership to keep your spaces beautiful 
             and your happiness lasting.

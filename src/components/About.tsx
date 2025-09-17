@@ -34,7 +34,7 @@ const About = () => {
             </div>
             
             <div className="bg-muted/50 rounded-2xl p-6">
-              <p className="text-lg text-accent font-medium text-center">
+              <p className="text-lg text-primary  font-medium text-center">
                 "You imagine it. We make it real."
               </p>
             </div>
@@ -85,8 +85,8 @@ const About = () => {
 
         <div className="bg-accent-gradient rounded-3xl p-8 lg:p-12 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
-            <h3 className="text-3xl font-bold text-white">Our Philosophy</h3>
-            <p className="text-lg text-white/90 leading-relaxed">
+            <h3 className="text-3xl font-bold ">Our Philosophy</h3>
+            <p className="text-lg  leading-relaxed">
               Modern painting shouldn't be stressful. We believe in transparency, quality, and building 
               lasting relationships with our clients. Our innovative approach combines the latest technology 
               with traditional craftsmanship to deliver results that exceed expectations.

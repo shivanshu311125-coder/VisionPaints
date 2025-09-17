@@ -1,17 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Eye, Calculator, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+
 import LetsConnectModal from "./LetsConnectModal";
 import EstimateModal from "./EstimateModal";
-
+import ImageSlider from "./ui/ImageSlider";
+import PromoVideo from "./ui/PromoVideo";
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen bg-card-gradient relative overflow-hidden">
+    <section id="hero" 
+    className="min-h-screen bg-card-gradient relative overflow-hidden dark:bg-card-gradient-dark">
       <div className="container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold text-4xl lg:text-5xl text-foreground">
                 Visualize Before You{" "}
                 <span className="bg-hero-gradient bg-clip-text text-transparent">
                   Realize
@@ -70,12 +72,11 @@ const Hero = () => {
 
           <div className="relative">
             <div className="absolute -inset-4 bg-hero-gradient rounded-3xl blur-2xl opacity-20 animate-pulse"></div>
-            <img
-              src={heroImage}
-              alt="Beautiful painted living room showcasing VisionPaint's quality work"
-              className="relative rounded-3xl shadow-large w-full h-auto object-cover"
-            />
+            <ImageSlider />
           </div>
+        </div>
+        <div className="mt-20">
+          <PromoVideo />
         </div>
       </div>
     </section>
