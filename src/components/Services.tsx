@@ -42,7 +42,7 @@ const services = [
 ];
 
 const serviceCategories = [
-  { name: "Core Painting Services", active: true },
+  { name: "Core Painting Services", active: false },
   { name: "Specialty Coatings", active: false },
   { name: "Cleaning & Restoration", active: false },
   { name: "Complementary Services", active: false },

@@ -139,9 +139,21 @@ const AIVisualizer = () => {
                   <div className="text-center space-y-2">
                     <Upload className="w-12 h-12 text-muted-foreground mx-auto" />
                     <p className="text-muted-foreground">Upload your room photo here</p>
-                    <Button variant="outline" size="sm">Browse Files</Button>
+                    <Button variant="outline" 
+                    size="sm"
+                    onClick={() => fileInputRef.current?.click()}
+                    >
+                      Browse Files
+                      </Button>
                   </div>
                 </div>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleFileUpload}
+                  className="hidden"
+                  />
                 
                 <div className="grid grid-cols-6 gap-2">
                   <div className="aspect-square bg-red-400 rounded-md cursor-pointer hover:scale-110 transition-transform"></div>
@@ -152,7 +164,9 @@ const AIVisualizer = () => {
                   <div className="aspect-square bg-pink-400 rounded-md cursor-pointer hover:scale-110 transition-transform"></div>
                 </div>
                 
-                <Button variant="default" className="w-full">
+                <Button variant="default" className="w-full"
+                onClick={generatePreview}
+                >
                   Generate Preview
                 </Button>
               </CardContent>

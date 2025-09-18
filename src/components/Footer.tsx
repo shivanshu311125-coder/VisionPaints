@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import logoVideo from "@/assets/video/logo-video.mp4";
+
 
 const Footer = () => {
   return (
@@ -9,9 +11,18 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-hero-gradient rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">V</span>
-              </div>
+              <video
+              src={logoVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-12 h-10 rounded-lg object-cover"
+              >
+              <source
+              src={logoVideo} type="video/mp4"
+              />
+              </video>
               <span className="text-xl font-bold">VisionPaint</span>
             </div>
             <p className="text-white/80 leading-relaxed">
@@ -19,17 +30,25 @@ const Footer = () => {
               Your vision, our expertise.
             </p>
             <div className="flex space-x-3">
-              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-                <Facebook className="w-4 h-4" />
+              <Button asChild variant="ghost" size="icon" aria-label="Facebook" className="text-white hover:bg-white/10">
+                <a href="https://www.facebook.com/shivkaansh.u" target="_blank" rel="noopener noreferrer">
+                 <Facebook className="w-4 h-4" />
+                </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-                <Twitter className="w-4 h-4" />
+                <a href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="w-4 h-4" />
+                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-                <Instagram className="w-4 h-4" />
+                <a href="https://www.instagram.com/_sam_85?igsh=anVrNXhhMzRqaTl3&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                   <Instagram className="w-4 h-4" />
+                </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-                <Linkedin className="w-4 h-4" />
+                <a href="https://www.linkedin.com/in/shivanshu311125?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-4 h-4" />
+                </a>
               </Button>
             </div>
           </div>
@@ -51,9 +70,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2 text-white/80">
               <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Why Choose Us</a></li>
+              <li><a href="#why-choose-us" className="hover:text-white transition-colors">Why Choose Us</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
             </ul>
           </div>

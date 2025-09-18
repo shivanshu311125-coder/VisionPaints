@@ -91,9 +91,12 @@ const About = () => {
               lasting relationships with our clients. Our innovative approach combines the latest technology 
               with traditional craftsmanship to deliver results that exceed expectations.
             </p>
-            <Button variant="secondary" size="lg">
+            <div className="flex justify-center">
+            <Button 
+            variant="secondary" size="lg">
               Learn More About Our Process
             </Button>
+            </div>
           </div>
         </div>
       </div>
