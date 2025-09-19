@@ -100,7 +100,13 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/60">
-            © 2024 VisionPaint by Shivanshu Yadav. All rights reserved. | Built with ❤️ for better painting experiences.
+            © 2024 VisionPaint by Shivanshu Yadav. All rights reserved. | Built with 
+            <img 
+            src="/src/assets/images/water-image.jpg"   // <-- replace with your logo path
+             alt="VisionPaint Logo" 
+             className="inline-block w-5 h-5 object-contain mx-1" 
+    />
+             for better painting experiences.
           </p>
         </div>
       </div>
