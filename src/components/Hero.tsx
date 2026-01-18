@@ -35,13 +35,12 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="flex items-center gap-2" onClick={() => {
-                const element = document.querySelector('[data-trigger="ai-color-visualizer"]') as HTMLElement;
-                element?.click();
-              }}>
-                <Eye className="w-5 h-5" />
-                AI Color Visualizer
-              </Button>
+              <a href="https://thevisionpaints.vercel.app/">
+                <Button variant="hero" size="lg" className="flex items-center gap-2">
+                  <Eye className="w-5 h-5" />
+                  AI Color Visualizer
+                </Button>
+              </a>
               <EstimateModal>
                 <Button variant="outline" size="lg" className="flex items-center gap-2">
                   <Calculator className="w-5 h-5" />
