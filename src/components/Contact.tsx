@@ -59,7 +59,7 @@ const Contact = () => {
         <p className="font-semibold text-primary">
           <a href="tel:+916307567956">+91 6307567956</a>
         </p>
-        <p className="text-xs text-muted-foreground">24X7</p>
+        <p className="text-xs text-muted-foreground">24X7 Support</p>
       </CardContent>
     </Card>
 
