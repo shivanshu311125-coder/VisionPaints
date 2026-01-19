@@ -5,7 +5,7 @@ import { Menu, X , Sun, Moon, Laptop } from "lucide-react";
 import { useTheme } from "next-themes";
 import FAQ from "./FAQ";
 import {  Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import logoVideo from "@/assets/video/logo_video.mp4";
+import logoVideo from "@/assets/video/logo-video.mp4";
 
 
 const Header = () => {

@@ -20,7 +20,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Choosing the right paint shouldn't be stressful. With VisionPaint, 
+                Choosing the right paint shouldn't be stressful. With TheVisionPaint, 
                 you can skip the hassle and enjoy a smooth, modern painting experience 
                 — from your screen to your walls.
               </p>

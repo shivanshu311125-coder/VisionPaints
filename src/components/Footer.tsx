@@ -36,11 +36,6 @@ const Footer = () => {
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
-                <a href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <Twitter className="w-4 h-4" />
-                 </a>
-              </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:bg-white/10">
                 <a href="https://www.instagram.com/_sam_85?igsh=anVrNXhhMzRqaTl3&utm_source=qr" target="_blank" rel="noopener noreferrer">
                    <Instagram className="w-4 h-4" />
                 </a>

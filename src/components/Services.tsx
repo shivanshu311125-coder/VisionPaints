@@ -17,13 +17,13 @@ const services = [
   },
   {
     icon: Building,
-    title: "Ceiling Painting",
+    title: "Pop & Fall-Ceiling",
     description: "Refresh your ceilings with our specialized painting techniques for flawless finish.",
     category: "Specialty Coatings",
   },
   {
     icon: Wrench,
-    title: "Floor Coating",
+    title: "Waterproof Coating",
     description: "Durable and attractive floor coatings for residential, commercial, and industrial spaces.",
     category: "Specialty Coatings",
   },
@@ -122,32 +122,32 @@ const Services = () => {
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
                 2
               </div>
-              <h4 className="text-lg font-semibold">Surface Preparation</h4>
-              <p className="text-sm text-muted-foreground">Proper cleaning, sanding, and priming to ensure paint adhesion and longevity.</p>
+              <h4 className="text-lg font-semibold">Personalized AI Visualization</h4>
+              <p className="text-sm text-muted-foreground">Preview multiple colors on your actual walls before deciding.</p>
             </div>
             
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
                 3
               </div>
-              <h4 className="text-lg font-semibold">Color Selection</h4>
-              <p className="text-sm text-muted-foreground">Our experts help you choose the perfect colors and finishes for your space.</p>
+              <h4 className="text-lg font-semibold">Professional Painting & Preperation</h4>
+              <p className="text-sm text-muted-foreground">Surface preparation + supervised painting with premium materials.</p>
             </div>
             
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
                 4
               </div>
-              <h4 className="text-lg font-semibold">Precision Application</h4>
-              <p className="text-sm text-muted-foreground">Skilled application using professional techniques and premium materials.</p>
+              <h4 className="text-lg font-semibold">Final Inspection</h4>
+              <p className="text-sm text-muted-foreground">Touch-ups, cleanup, quality check.</p>
             </div>
             
             <div className="text-center space-y-4">
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
                 5
               </div>
-              <h4 className="text-lg font-semibold">Final Inspection & Cleanup</h4>
-              <p className="text-sm text-muted-foreground">Thorough quality check and complete cleanup of the work area.</p>
+              <h4 className="text-lg font-semibold">Final Handover</h4>
+              <p className="text-sm text-muted-foreground">Final touch-ups, deep cleanup, and a quality check—then we hand over your perfectly finished space.</p>
             </div>
           </div>
         </div>
