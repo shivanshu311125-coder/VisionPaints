@@ -54,21 +54,19 @@ const Hero = () => {
             </LetsConnectModal>
 
             <div className="flex items-center gap-6 pt-4">
-  <div className="flex items-center gap-2">
-    <Phone className="w-5 h-5 text-primary" />
-    <a href="tel:+91 63075 67956" className="text-sm text-muted-foreground">
-      Quick Response
-    </a>
-  </div>
-  <div className="flex items-center gap-2">
-    <div className="w-2 h-2 bg-success rounded-full"></div>
-    <span className="text-sm text-muted-foreground">Professional Painters</span>
-  </div>
-  <div className="flex items-center gap-2">
-    <div className="w-2 h-2 bg-secondary rounded-full"></div>
-    <span className="text-sm text-muted-foreground">No Hidden Costs</span>
-  </div>
-</div>
+              <div className="flex items-center gap-2">
+                <Phone className="w-5 h-5 text-primary" />
+                <span className="text-sm text-muted-foreground">Quick Response</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-success rounded-full"></div>
+                <span className="text-sm text-muted-foreground">Professional Painters</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                <span className="text-sm text-muted-foreground">No Hidden Costs</span>
+              </div>
+            </div>
           </div>
 
           <div className="relative">
