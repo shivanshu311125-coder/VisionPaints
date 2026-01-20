@@ -36,7 +36,7 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section id="why-choose-us" className="py-20 bg-background">
+    <section id="why-choose-us" className="py-20 ">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
@@ -46,6 +46,7 @@ const WhyChooseUs = () => {
             We're more than just painters — we're your partners in transforming spaces with modern technology and professional expertise.
           </p>
         </div>
+        
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => {
@@ -64,16 +65,7 @@ const WhyChooseUs = () => {
           })}
         </div>
 
-        <div className="mt-16 bg-accent-gradient rounded-3xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            🌟 A Bond Beyond Painting
-          </h3>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Our relationship doesn't end when the painting does. At VisionPaint, we stay with you 
-            even after the job is done — building a forever partnership to keep your spaces beautiful 
-            and your happiness lasting.
-          </p>
-        </div>
+        
       </div>
     </section>
   );

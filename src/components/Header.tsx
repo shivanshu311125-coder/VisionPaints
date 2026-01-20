@@ -38,6 +38,9 @@ const Header = () => {
             <a href="#services" className="text-foreground hover:text-primary transition-colors">
               Services
             </a>
+            <a href="https://thevisionpaints.vercel.app/" className="text-foreground hover:text-primary transition-colors">
+              AI Visualizer
+            </a>
             <a href="#why-choose-us" className="text-foreground hover:text-primary transition-colors">
               Why Choose Us
             </a>
