@@ -22,22 +22,36 @@ const About = () => {
                 Welcome to VisionPaint
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                At VisionPaint, we're revolutionizing the painting industry with cutting-edge AI technology 
-                and unwavering commitment to quality. From choosing the perfect colors with our AI-powered 
+                At VisionPaint, we're revolutionizing the painting industry with cutting-edge AI technology
+                and unwavering commitment to quality. From choosing the perfect colors with our AI-powered
                 visualizer to delivering flawless finishes, we make painting simple, modern, and stress-free.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                We handle everything from colors, painters, and timelines to seamless post-job follow-ups. 
-                Our expert painters are punctual, professional, and supervised every step of the way. 
+                We handle everything from colors, painters, and timelines to seamless post-job follow-ups.
+                Our expert painters are punctual, professional, and supervised every step of the way.
                 And with no commissions, hidden charges, or delays, you get exactly what you were promised.
               </p>
             </div>
-            
-            <div className="bg-muted/50 rounded-2xl p-6">
-              <p className="text-lg text-primary  font-medium text-center">
-                "You imagine it. We make it real."
-              </p>
+
+            <div className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-r from-primary/15 via-muted/40 to-secondary/15 p-6 shadow-md">
+              <div className="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-primary/20 blur-3xl" />
+              <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-secondary/20 blur-3xl" />
+
+              <div className="relative text-center space-y-3">
+                <p className="text-sm uppercase tracking-widest text-muted-foreground">
+                  Our Promise
+                </p>
+
+                <p className="text-xl lg:text-2xl font-bold text-foreground">
+                  You Imagine It. We Make It Real.
+                </p>
+
+                <div className="flex justify-center">
+                  <span className="h-1 w-16 rounded-full bg-primary" />
+                </div>
+              </div>
             </div>
+
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -87,15 +101,15 @@ const About = () => {
           <div className="max-w-3xl mx-auto space-y-6">
             <h3 className="text-3xl font-bold ">Our Philosophy</h3>
             <p className="text-lg  leading-relaxed">
-              Modern painting shouldn't be stressful. We believe in transparency, quality, and building 
-              lasting relationships with our clients. Our innovative approach combines the latest technology 
+              Modern painting shouldn't be stressful. We believe in transparency, quality, and building
+              lasting relationships with our clients. Our innovative approach combines the latest technology
               with traditional craftsmanship to deliver results that exceed expectations.
             </p>
             <div className="flex justify-center">
-            <Button 
-            variant="secondary" size="lg">
-              Learn More About Our Process
-            </Button>
+              <Button
+                variant="secondary" size="lg">
+                Learn More About Our Process
+              </Button>
             </div>
           </div>
         </div>
