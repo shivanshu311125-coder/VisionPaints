@@ -1,16 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Eye, Upload, Palette, Sparkles } from "lucide-react";
+import LetsConnectModal from "@/components/LetsConnectModal"; // ✅ adjust path if needed
 
 const AIVisualizer = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background" id="AIVisualizer">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground">
-            <span className="bg-hero-gradient bg-clip-text text-transparent">AI-Powered</span> Color Visualization
+            <span className="bg-hero-gradient bg-clip-text text-transparent">
+              AI-Powered
+            </span>{" "}
+            Color Visualization
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            See your space transformed before the first brush stroke. Upload your room photo and preview any color instantly.
+            See your space transformed before the first brush stroke. Upload your
+            room photo and preview any color instantly.
           </p>
         </div>
 
@@ -22,8 +27,13 @@ const AIVisualizer = () => {
                   <Upload className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-1">Upload Your Photo</h3>
-                  <p className="text-sm text-muted-foreground">Simply take a photo of your wall or room and upload it to our AI system.</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-1">
+                    Upload Your Photo
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Simply take a photo of your wall or room and upload it to our
+                    AI system.
+                  </p>
                 </div>
               </div>
 
@@ -32,8 +42,13 @@ const AIVisualizer = () => {
                   <Palette className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-1">Choose Your Colors</h3>
-                  <p className="text-sm text-muted-foreground">Select from our extensive palette of colors and premium paint brands.</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-1">
+                    Choose Your Colors
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Select from our extensive palette of colors and premium paint
+                    brands.
+                  </p>
                 </div>
               </div>
 
@@ -42,19 +57,30 @@ const AIVisualizer = () => {
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-1">Preview Instantly</h3>
-                  <p className="text-sm text-muted-foreground">Our AI generates a realistic preview of your painted room in seconds.</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-1">
+                    Preview Instantly
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Our AI generates a realistic preview of your painted room in
+                    seconds.
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="space-y-4">
-              <a href="https://thevisionpaints.vercel.app/" className="block">
-                <Button variant="hero" size="lg" className="w-full flex items-center justify-center gap-2">
+              {/* ✅ Popup first, then redirect after submit */}
+              <LetsConnectModal redirectUrl="https://thevisionpaints.vercel.app/">
+                <Button
+                  variant="hero"
+                  size="lg"
+                  className="w-full flex items-center justify-center gap-2"
+                >
                   <Eye className="w-5 h-5" />
                   Try AI Visualizer Now
                 </Button>
-              </a>
+              </LetsConnectModal>
+
               <p className="text-sm text-muted-foreground text-center">
                 Free to use • No registration required • Instant results
               </p>

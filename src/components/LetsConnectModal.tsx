@@ -14,15 +14,17 @@ import { useToast } from "@/hooks/use-toast";
 
 interface LetsConnectModalProps {
   children: React.ReactNode;
+  redirectUrl?: string; // ✅ NEW (optional)
 }
 
-const LetsConnectModal = ({ children }: LetsConnectModalProps) => {
+const LetsConnectModal = ({ children, redirectUrl }: LetsConnectModalProps) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
   });
+
   const [open, setOpen] = useState(false);
   const { toast } = useToast();
 
@@ -38,17 +40,15 @@ const LetsConnectModal = ({ children }: LetsConnectModalProps) => {
         body: JSON.stringify({
           data: [
             {
-              "Full_Name": formData.name,
-              "Email_Address": formData.email,
+              Full_Name: formData.name,
+              Email_Address: formData.email,
               "Phone Number": formData.phone,
-              "Message": formData.message,
+              Message: formData.message,
             },
           ],
         }),
       });
-console.log(response.formData);
-console.log(response);
-console.log(setFormData);
+
       if (!response.ok) {
         throw new Error(`Error: ${response.status} - ${response.statusText}`);
       }
@@ -61,6 +61,11 @@ console.log(setFormData);
 
       setFormData({ name: "", email: "", phone: "", message: "" });
       setOpen(false);
+
+      // ✅ Redirect ONLY if redirectUrl is provided
+      if (redirectUrl) {
+        window.location.href = redirectUrl;
+      }
     } catch (error) {
       console.error("Form submission error:", error);
       toast({
@@ -76,12 +81,14 @@ console.log(setFormData);
       <DialogTrigger asChild id="lets-connect-trigger">
         {children}
       </DialogTrigger>
+
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="text-2xl text-center">
             Let's Connect
           </DialogTitle>
         </DialogHeader>
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="name">Full Name *</Label>
@@ -94,6 +101,7 @@ console.log(setFormData);
               required
             />
           </div>
+
           <div className="space-y-2">
             <Label htmlFor="email">Email Address *</Label>
             <Input
@@ -106,6 +114,7 @@ console.log(setFormData);
               required
             />
           </div>
+
           <div className="space-y-2">
             <Label htmlFor="phone">Phone Number *</Label>
             <Input
@@ -118,6 +127,7 @@ console.log(setFormData);
               required
             />
           </div>
+
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
             <Textarea
@@ -130,6 +140,7 @@ console.log(setFormData);
               className="min-h-20"
             />
           </div>
+
           <Button type="submit" variant="hero" className="w-full">
             Submit Request
           </Button>
