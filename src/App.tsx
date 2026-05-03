@@ -6,9 +6,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import ClientShowcase from "./pages/ClientShowcase";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
+import ScrollToHash from "./components/ScrollToHash";
 
 
 const queryClient = new QueryClient();
@@ -20,10 +22,12 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToHash />
         <Header />
         <main className="min-h-screen">
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/clients" element={<ClientShowcase />} />
           
           <Route path="*" element={<NotFound />} />
         </Routes>

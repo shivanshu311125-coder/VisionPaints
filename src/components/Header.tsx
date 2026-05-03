@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import LetsConnectModal from "./LetsConnectModal";
-import { Menu, X , Sun, Moon, Laptop } from "lucide-react";
+import { Menu, X , Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
-import FAQ from "./FAQ";
 import {  Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import logoVideo from "@/assets/video/logo-video.mp4";
 
@@ -20,39 +20,44 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-           <video 
-           src={logoVideo}
-           autoPlay
-           loop
-           muted
-           playsInline
-           className="w-12 h-10 rounded-lg object-cover"
-           />
-            <span className="text-xl font-bold text-foreground">VisionPaint</span>
+            <Link to="/" className="flex items-center space-x-2">
+              <video 
+              src={logoVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-12 h-10 rounded-lg object-cover"
+              />
+              <span className="text-xl font-bold text-foreground">VisionPaint</span>
+            </Link>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#hero" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/#hero" className="text-foreground hover:text-primary transition-colors">
               Home
-            </a>
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/#services" className="text-foreground hover:text-primary transition-colors">
               Services
-            </a>
-            <a href="#AIVisualizer" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/clients" className="text-foreground hover:text-primary transition-colors">
+              Clients
+            </Link>
+            <Link to="/#AIVisualizer" className="text-foreground hover:text-primary transition-colors">
               AI Visualizer
-            </a>
-            <a href="#why-choose-us" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/#why-choose-us" className="text-foreground hover:text-primary transition-colors">
               Why Choose Us
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/#about" className="text-foreground hover:text-primary transition-colors">
               About
-            </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
-            </a>
-            <a href="#faq" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/#faq" className="text-foreground hover:text-primary transition-colors">
               FAQ
-              </a>
+            </Link>
             
           </nav>
           <div className="flex items-center space-x-2">
@@ -90,35 +95,45 @@ const Header = () => {
         {isOpen && (
           <div className="md:hidden mt-4 space-y-4">
             <nav className="flex flex-col space-y-3">
-              <a href="#hero" className="text-foreground hover:text-primary transition-colors"
+              <Link to="/#hero" className="text-foreground hover:text-primary transition-colors"
                onClick={() => setIsOpen(false)}
                >
                 Home
-              </a>
-              <a href="#services" className="text-foreground hover:text-primary transition-colors"
+              </Link>
+              <Link to="/#services" className="text-foreground hover:text-primary transition-colors"
                onClick={() => setIsOpen(false)}
                >
                 Services
-              </a>
-              <a href="#why-choose-us" className="text-foreground hover:text-primary transition-colors"
+              </Link>
+              <Link to="/clients" className="text-foreground hover:text-primary transition-colors"
+               onClick={() => setIsOpen(false)}
+               >
+                Clients
+              </Link>
+              <Link to="/#AIVisualizer" className="text-foreground hover:text-primary transition-colors"
+               onClick={() => setIsOpen(false)}
+               >
+                AI Visualizer
+              </Link>
+              <Link to="/#why-choose-us" className="text-foreground hover:text-primary transition-colors"
                onClick={() => setIsOpen(false)}>
                 Why Choose Us
-              </a>
-              <a href="#about" className="text-foreground hover:text-primary transition-colors"
+              </Link>
+              <Link to="/#about" className="text-foreground hover:text-primary transition-colors"
                onClick={() => setIsOpen(false)}
                >
                 About
-              </a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors"
+              </Link>
+              <Link to="/#contact" className="text-foreground hover:text-primary transition-colors"
                onClick={() => setIsOpen(false)}
                 >
                 Contact
-              </a>
-              <a href="#faq" className="text-foreground hover:text-primary transition-colors"
+              </Link>
+              <Link to="/#faq" className="text-foreground hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
               >
               FAQ
-              </a>
+              </Link>
             </nav>
             <div className="flex items-center justify-between">
               <div className="flex space-x-1">

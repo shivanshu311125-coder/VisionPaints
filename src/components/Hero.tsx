@@ -47,12 +47,17 @@ const Hero = () => {
 
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://thevisionpaints.vercel.app/">
-                <Button variant="hero" size="lg" className="flex items-center gap-2">
+              <LetsConnectModal redirectUrl="https://thevisionpaints.vercel.app/">
+                <Button
+                  variant="hero"
+                  size="lg"
+                  className="w-full flex items-center justify-center gap-2"
+                >
                   <Eye className="w-5 h-5" />
-                  AI Color Visualizer
+                  Try AI Visualizer Now
                 </Button>
-              </a>
+              </LetsConnectModal>
+
 
               <EstimateModal>
                 <Button variant="outline" size="lg" className="flex items-center gap-2">
